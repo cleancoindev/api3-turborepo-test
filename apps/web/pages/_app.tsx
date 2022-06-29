@@ -1,7 +1,8 @@
 // import App from 'next/app'
 import './../styles/globals.css';
 import { useEffect } from 'react';
-import AOS from 'aos';
+
+const AOS = require('aos');
 import 'aos/dist/aos.css'
 
 function MyApp({ Component, pageProps } : any) {
