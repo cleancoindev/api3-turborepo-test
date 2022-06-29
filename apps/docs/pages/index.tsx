@@ -1,6 +1,6 @@
 // import { Button } from "api3-ui";
 import styled, { ThemeProvider, ThemeContext } from 'styled-components';
-import theme from '../../../themes/default';
+import theme from 'api3-ui/dist/themes/default';
 import { Flex } from 'rebass'
 
 export default function Docs() {
