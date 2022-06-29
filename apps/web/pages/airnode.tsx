@@ -1,6 +1,6 @@
 // import { Button, Text } from "rebass";
 import { useState } from 'react';
-import { Button, Navbar } from 'api3-ui/dist';
+import { Button, Navbar } from 'api3-ui';
 import styled, { ThemeProvider, ThemeContext } from 'styled-components';
 import defaultTheme from 'api3-ui/dist/themes/default';
 
