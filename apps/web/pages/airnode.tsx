@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import { Button, Navbar } from 'api3-ui/dist';
 import styled, { ThemeProvider, ThemeContext } from 'styled-components';
-import defaultTheme from '../../../themes/default';
-import inverseTheme from '../../../themes/inverse';
+import defaultTheme from 'api3-ui/dist/themes/default';
 
 
 import { Box, Text, Flex, Image, Link} from 'rebass/styled-components';
