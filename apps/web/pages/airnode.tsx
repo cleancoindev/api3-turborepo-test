@@ -11,7 +11,7 @@ import Head from 'next/head';
 
 export default function Web() {
   // console.log(theme)
-  const [theme, setTheme] = useState(defaultTheme);
+  const [theme, setTheme] = useState(defaultTheme)
 
   return (
     <ThemeProvider theme={theme}>
@@ -29,7 +29,7 @@ export default function Web() {
           background: theme.gradients.backgroundGradient
         }} />
         <Navbar />
-        <Flex sx={theme.layouts.main} pt={['5.75rem', '5.75rem', '5.75rem', '5rem']} mx={'auto'}>
+        <Flex sx={theme.layouts.main} pt={'5rem'} mx={'auto'}>
           <Flex flexDirection={'column'} width={[1, 1, 1, '48.5rem']}>
             <Text data-aos={'fade-up'} as="h1" sx={{
               fontSize: [
@@ -53,7 +53,7 @@ export default function Web() {
                 ]
               }}
             >
-              The Web3<Box as='br' display={['block', 'none', 'none', 'block']}/> API Economy
+              Airnode<Box as='br' display={['block', 'none', 'none', 'block']}/>
             </Text>
             <Text data-aos={'fade-up'} sx={{
               ...theme.text.medium,
