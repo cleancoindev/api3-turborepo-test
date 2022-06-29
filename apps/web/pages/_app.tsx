@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 function MyApp({ Component, pageProps } : any) {
     useEffect(() => {
         AOS.init({
-          offset: 380,
+          offset: 0,
           duration: 300
         });
     }, []);

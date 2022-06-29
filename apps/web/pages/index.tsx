@@ -1,11 +1,11 @@
 // import { Button, Text } from "rebass";
 import { useState } from 'react';
 import { Button, Navbar } from 'api3-ui';
-import styled, { ThemeProvider, ThemeContext } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import defaultTheme from 'api3-ui/dist/themes/default';
 
 
-import { Box, Text, Flex, Image, Link} from 'rebass/styled-components';
+import { Box, Text, Flex } from 'rebass/styled-components';
 import Head from 'next/head';
 
 export default function Web() {
@@ -73,7 +73,9 @@ export default function Web() {
             }}>
               First-party oracles are the next-generation technology to access off-chain data. API3 is leading the movement from legacy third-party oracle networks to first-party oracle solutions that deliver more security, efficiency, and data-source transparency.
             </Text>
-            <Button variant='primary'>What a spanking button!</Button>
+            <Box data-aos={'fade-up'}>
+              <Button variant='primary'>What a spanking button!</Button>
+            </Box>
           </Flex>
         </Flex>
       </StyledAppRoot>
