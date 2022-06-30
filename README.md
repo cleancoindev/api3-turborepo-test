@@ -1,6 +1,6 @@
-# Turborepo starter
+# API3 Web Monorepo
 
-This is an official Yarn v1 starter turborepo.
+This is a official API3 repo that contains the NextJS frontend and the Strapi CMS backend.
 
 ## What's inside?
 
@@ -10,7 +10,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 - `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `api3-ui`: a React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
