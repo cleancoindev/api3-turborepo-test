@@ -1,0 +1,36 @@
+import { Button } from "api3-ui";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta 
+  title="Components/Button" 
+  component={Button} 
+  argTypes={{label: {
+    options: ['default']
+  }}}
+/>
+
+export const Template = (args) => <Button {...args} />;
+
+# Button
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+
+## Props
+
+<Props of={Button} />
+
+## Examples
+
+<Preview>
+  <Story name="Default" args={{
+    children: 'This is a button'
+  }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Secondary" args={{
+    type: 'secondary', 
+    children: '+ This is a secondary button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Preview>

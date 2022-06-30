@@ -1,0 +1,26 @@
+import { Navbar } from "api3-ui";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta 
+  title="Components/Navbar" 
+  component={ Navbar } 
+/>
+
+# Navbar
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+
+## Props
+
+<Props of={Navbar} />
+
+## Examples
+
+<Preview>
+    <Story name="Default">
+        <Navbar />
+    </Story>
+    <Story name="Light Background">
+        <Navbar style={'light'}/>
+    </Story>
+</Preview>
