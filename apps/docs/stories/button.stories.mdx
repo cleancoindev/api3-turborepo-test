@@ -4,12 +4,15 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 <Meta 
   title="Components/Button" 
   component={Button} 
-  argTypes={{label: {
-    options: ['default']
-  }}}
+  argTypes={{
+    type: {
+      options: ['secondary', 'primary'],
+      default: 'primary',
+      control: { type: 'select'}
+    }}}
 />
 
-export const Template = (args) => <Button {...args} />;
+export const Template = (args) => <Button {...args} onClick={() => {alert('Button clicked!')}} />;
 
 # Button
 
@@ -22,15 +25,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl ege
 ## Examples
 
 <Preview>
-  <Story name="Default" args={{
-    children: 'This is a button'
+  <Story 
+    name="Default" 
+    args={{
+    type: 'primary',
+    children: 'This is a button',
   }}>
     {Template.bind({})}
   </Story>
-  <Story name="Secondary" args={{
-    type: 'secondary', 
-    children: '+ This is a secondary button'
-  }}>
+  <Story 
+    name="Secondary" 
+    args={{
+      type: 'secondary', 
+      children: '+ This is a secondary button',
+    }}
+  >
     {Template.bind({})}
   </Story>
 </Preview>
